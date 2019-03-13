@@ -1,0 +1,14 @@
+layout:
+    actions:
+        - '@setBlockTheme':
+            themes: 'layout.html.twig'
+        - '@addTree':
+            items:
+                twig_layout_course2:
+                    blockType: link
+                    options:
+                        route_name: 'twiglayout_default_index'
+                        text: 'More Info'
+            tree:
+                page_main_content:
+                    twig_layout_course2: ~

@@ -1,0 +1,6 @@
+ibnab_twig_layout_frontend:
+    resource: "@IbnabTwigLayoutBundle/Controller/Frontend/"
+    type:     annotation
+    prefix:   /
+    options:
+        frontend: true

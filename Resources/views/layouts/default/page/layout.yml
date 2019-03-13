@@ -1,0 +1,21 @@
+layout:
+    actions:
+        - '@setBlockTheme':
+            themes: 'IbnabTwigLayoutBundle:layouts:default/page/layout.html.twig'
+        - '@add':
+            id: ibnab_custom_twiglayout
+            parentId: head
+            blockType: style
+            options:
+                src: '/allcom/com3.0/public/css/layout/default/custom_view_color_1.css'
+        - '@addTree':
+            items:
+                twig_layout_course:
+                    blockType: link
+                    options:
+                        route_name: 'twiglayout_default_index'
+                        text: 'More Info'
+            tree:
+                top_nav_container:
+                    twig_layout_course: ~
+    conditions: 'context.has("is_mobile") && context["is_mobile"] != 1'

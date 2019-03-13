@@ -1,0 +1,2 @@
+bundles:
+    - { name: Ibnab\Bundle\TwigLayoutBundle\IbnabTwigLayoutBundle , priority: 70 }

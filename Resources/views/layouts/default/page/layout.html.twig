@@ -1,0 +1,8 @@
+{% block _twig_layout_course_widget %}
+    {% set attr = layout_attr_defaults(attr, {
+        '~class': ' link'
+    }) %}
+      <ul class="topbar-navigation topbar-navigation--controls" >
+        <li class=" topbar-navigation__item shown-on-desktop mytopnav"> {{ block_widget(block, {attr: attr}) }} <li>
+    </ul>
+{% endblock %}
